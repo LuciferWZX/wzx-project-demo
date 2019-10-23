@@ -68,7 +68,7 @@ class GoodsDetail extends Component {
   }
   clickBgColor = (sizeId) => {
     const { currentColor } = this.state;
-    const { dispatch, sizes, currentGoods, allMight, colors, disabledColor, disabledSize } = this.props;
+    const { dispatch, sizes, allMight, colors, disabledColor, disabledSize } = this.props;
     let theMight = allMight.filter(item => item.size === sizeId);
     let ids = theMight.filter((item) => item.in_stock_num === 0);
     dispatch({
